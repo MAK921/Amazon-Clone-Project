@@ -1,0 +1,203 @@
+--------------------------
+/*        Header Styles       */
+/* -------------------------- */
+
+* {
+margin: 0;
+padding: 0;
+}
+.fixed2 {
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+/* Header container */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #131921; 
+  padding: 10px 20px;
+  color: #fff;
+}
+
+
+/* Logo & Delivery Info */
+.header_logo-delivery {
+  display: flex;
+  align-items: center;
+}
+
+.header_logo img {
+  width: 100px; 
+  object-fit: contain;
+}
+
+.header_delivery {
+  display: flex;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header_delivery p,
+.header_delivery span {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Search Bar */
+.header_search {
+  display: flex;
+  flex: 1;
+  margin: 0 20px;
+  max-width: 1300px;
+}
+
+.header_search select {
+  padding: 5px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.header_search input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.header_search-button {
+  background-color: #febd69;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.header_search-button:hover {
+  background-color: #f3a847;
+}
+
+/* Navigation Links */
+.header_nav {
+  display: flex;
+  align-items: center;
+}
+
+.header_language {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.header_language img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.sign_in {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.header_orders {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.header_orders p,
+.header_orders span {
+  margin: 0;
+  color: white;
+}
+
+.header_cart {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  position: relative;
+  left: 16px;
+  top: 0px;
+}
+
+.header_cart span {
+  margin-left: 15px;
+  font-weight: bold;
+  position: absolute;
+  color: #f3a847;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.header_logo img:hover,
+.header_delivery:hover,
+.header_language:hover,
+.sign_in:hover,
+.header_orders:hover,
+.header_cart:hover{
+border: 1px solid white;
+border-radius: 3px;
+}
+
+
+
+
+/* -------------------------- */
+/*     Lowerheader Styles     */
+/* -------------------------- */
+
+.Lowerheader_container {
+  background-color: #232f3e; 
+}
+
+.Lowerheader_container ul {
+  list-style: none;  
+  margin: 0;
+  padding: 0;
+  display: flex;     
+  align-items: center;
+  gap: 10px;
+}
+
+.Lowerheader_container li {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  cursor: pointer;
+  white-space: nowrap; 
+  transition: background-color 0.2s ease;
+  margin-right: 15px;
+}
+
+.Lowerheader_container li:last-child {
+  margin-right: 0;
+}
+
+.Lowerheader_container li:hover {
+  background-color: #37475a;
+  border-radius: 4px;
+}
+
+.Lowerheader_container li p {
+  margin-left: 5px;
+}
+.Lowerheader_container li:hover{
+border: 1px solid white;
+border-radius: 3px;
+} 
