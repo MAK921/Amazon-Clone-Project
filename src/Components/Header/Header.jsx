@@ -3,7 +3,7 @@ import { CiSearch } from 'react-icons/ci';
 import { SlLocationPin } from "react-icons/sl";
 import { BiCart } from 'react-icons/bi';
 import './header.css';
-import Lowerheader from './Lowerheader';
+import LowerHeader from './LowerHeader';
 import { DataContext } from '../DataProvider/DataProvider';
 import { Link } from 'react-router-dom';
 import {auth} from '../../Utility/firebase';
@@ -81,7 +81,7 @@ const Header = () => {
           </Link>
         </nav>
       </section>
-      <Lowerheader />
+      <LowerHeader />
     </section>
   );
 };
