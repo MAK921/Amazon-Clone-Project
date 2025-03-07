@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.css";
+import "./Footer.css";
 import Logo from "../Imgs/logo2.png";
 import { BiFontSize } from "react-icons/bi";
 
