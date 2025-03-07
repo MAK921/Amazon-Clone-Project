@@ -1,22 +1,22 @@
  
-  import React, { useState, createContext, useContext } from "react";
+//   import React, { useState, createContext, useContext } from "react";
 
-const colorContext = createContext();
+// const colorContext = createContext();
 
-export const useColor = () => {
-  return useContext(colorContext);
-};
+// export const useColor = () => {
+//   return useContext(colorContext);
+// };
 
-export const ThemProvider = ({ children }) => {
-  const [color, setColor] = useState('light');
+// export const ThemProvider = ({ children }) => {
+//   const [color, setColor] = useState('light');
 
-  const colorToggler = () => {
-    setColor(prev => (prev === 'light' ? 'black' : 'light'));
-  };
+//   const colorToggler = () => {
+//     setColor(prev => (prev === 'light' ? 'black' : 'light'));
+//   };
 
-  return (
-    <colorContext.Provider value={{ color, colorToggler }}>
-      {children}
-    </colorContext.Provider>
-  );
-};
+//   return (
+//     <colorContext.Provider value={{ color, colorToggler }}>
+//       {children}
+//     </colorContext.Provider>
+//   );
+// };
