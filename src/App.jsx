@@ -54,17 +54,9 @@ function App() {
   const [{ user }, dispatch] = useContext(DataContext);
 
   useEffect(() => {
-    // 🔹 Handle Third-Party Cookie Restrictions
-    document.hasStorageAccess().then((hasAccess) => {
-      if (!hasAccess) {
-        document.requestStorageAccess()
-          .then(() => console.log("✅ Storage access granted!"))
-          .catch(() => console.warn("⚠️ Storage access denied by user"));
-      }
-    });
 
     // 🔹 Firebase Authentication Listener
-    const unsubscribe = auth.onAuthStateChanged((authUser) => {
+    auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         dispatch({
           type: Type.SET_USER,
@@ -78,10 +70,7 @@ function App() {
       }
     });
 
-    return () => {
-      unsubscribe();
-    };
-  }, []);
+    }, []);
 
   return (
     <>
