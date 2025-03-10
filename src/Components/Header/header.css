@@ -1,15 +1,15 @@
---------------------------
+/* -------------------------- */
 /*        Header Styles       */
 /* -------------------------- */
 
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .fixed2 {
-position: sticky;
-top: 0;
-z-index: 100;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 /* Header container */
@@ -17,11 +17,10 @@ z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #131921; 
+  background-color: #131921;
   padding: 10px 20px;
   color: #fff;
 }
-
 
 /* Logo & Delivery Info */
 .header_logo-delivery {
@@ -30,7 +29,7 @@ z-index: 100;
 }
 
 .header_logo img {
-  width: 100px; 
+  width: 100px;
   object-fit: contain;
 }
 
@@ -148,27 +147,24 @@ z-index: 100;
 .header_language:hover,
 .sign_in:hover,
 .header_orders:hover,
-.header_cart:hover{
-border: 1px solid white;
-border-radius: 3px;
+.header_cart:hover {
+  border: 1px solid white;
+  border-radius: 3px;
 }
-
-
-
 
 /* -------------------------- */
 /*     Lowerheader Styles     */
 /* -------------------------- */
 
 .Lowerheader_container {
-  background-color: #232f3e; 
+  background-color: #232f3e;
 }
 
 .Lowerheader_container ul {
-  list-style: none;  
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;     
+  display: flex;
   align-items: center;
   gap: 10px;
 }
@@ -180,7 +176,7 @@ border-radius: 3px;
   font-size: 14px;
   padding: 5px 10px;
   cursor: pointer;
-  white-space: nowrap; 
+  white-space: nowrap;
   transition: background-color 0.2s ease;
   margin-right: 15px;
 }
@@ -197,7 +193,7 @@ border-radius: 3px;
 .Lowerheader_container li p {
   margin-left: 5px;
 }
-.Lowerheader_container li:hover{
-border: 1px solid white;
-border-radius: 3px;
-} 
+.Lowerheader_container li:hover {
+  border: 1px solid white;
+  border-radius: 3px;
+}

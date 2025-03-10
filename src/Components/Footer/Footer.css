@@ -13,14 +13,13 @@
   font-weight: bolder;
 }
 
-.disclaimer-desc{
-font-size: 20px;
+.disclaimer-desc {
+  font-size: 20px;
 }
 
-.link-section{
-background-color: #1c2228;
+.link-section {
+  background-color: #1c2228;
 }
-
 
 .first-row,
 .second-row,
@@ -36,9 +35,8 @@ background-color: #1c2228;
   gap: 12px;
   margin-top: 3px;
 }
-.first-row-link{
-text-decoration: underline;
-
+.first-row-link {
+  text-decoration: underline;
 }
 
 .link-section,
@@ -56,7 +54,7 @@ text-decoration: underline;
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
   font-size: 22px;
-  color:lightblue !important;
+  color: lightblue !important;
 }
 
 .amazon-img {
@@ -96,8 +94,6 @@ text-decoration: underline;
 .link-section2 {
   display: none;
 }
-
-
 
 @media (max-width: 880px) {
   .disclaimer-area {

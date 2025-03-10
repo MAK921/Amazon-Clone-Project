@@ -1,28 +1,26 @@
 .container {
-background-color: #efeeee;
-padding: 30px;
+  background-color: #efeeee;
+  padding: 30px;
 }
 
-
 .order_container {
-background-color: #fff;
-padding: 20px;
+  background-color: #fff;
+  padding: 20px;
 }
 
 .order_container h2 {
-border-bottom: 2px solid ver(--primary-shade);
-padding: 20px;
+  border-bottom: 2px solid ver(--primary-shade);
+  padding: 20px;
 }
 
-
-.order_container p{
-padding: 12px;
+.order_container p {
+  padding: 12px;
 }
 
-.order_container img{
-width: 100px !important;
+.order_container img {
+  width: 100px !important;
 }
 
 .order_container div {
-height: auto !important
+  height: auto !important;
 }
