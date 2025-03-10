@@ -63,7 +63,7 @@
 }
 
 .login_signInButton:hover {
-  background-color: var (--primary-shade);
+  background-color: var(--primary-shade);
 }
 
 .login_container p {

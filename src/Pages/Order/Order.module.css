@@ -9,7 +9,7 @@
 }
 
 .order_container h2 {
-  border-bottom: 2px solid ver(--primary-shade);
+  border-bottom: 2px solid var(--primary-shade);
   padding: 20px;
 }
 
