@@ -74,10 +74,10 @@ function Routing() {
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Landing />} />
-          <Route path="auth" element={<Auth />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/auth" element={<Auth />} />
           <Route
-            path="payments"
+            path="/payments"
             element={
               <ProtectedRoute msg="You must log in to access payments" redirect="/auth">
                 <Elements stripe={stripePromise}>
@@ -87,16 +87,16 @@ function Routing() {
             }
           />
           <Route
-            path="orders"
+            path="/orders"
             element={
               <ProtectedRoute msg="You must log in to view your orders" redirect="/payments">
                 <Orders />
               </ProtectedRoute>
             }
           />
-          <Route path="products/:productId" element={<ProductDetail />} />
-          <Route path="category/:categoryName" element={<Results />} />
-          <Route path="cart" element={<Cart />} />
+          <Route path="/products/:productId" element={<ProductDetail />} />
+          <Route path="/category/:categoryName" element={<Results />} />
+          <Route path="/cart" element={<Cart />} />
         </Route>
       </Routes>
     </Router>
