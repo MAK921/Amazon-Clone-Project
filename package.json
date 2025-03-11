@@ -1,4 +1,3 @@
-
 {
   "homepage": "https://MAK921.github.io/Amazon-Clone-Project",
   "name": "amazon-clone-project",
@@ -22,6 +21,7 @@
     "axios": "^1.8.1",
     "firebase": "^11.3.1",
     "gh-pages": "^6.3.0",
+    "lodash": "^4.17.21",
     "lucide-react": "^0.477.0",
     "numeral": "^2.0.6",
     "react": "^19.0.0",

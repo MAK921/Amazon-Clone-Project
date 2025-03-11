@@ -6,12 +6,25 @@
 // export default defineConfig({
 //   // base: "/Amaz/on-Clone-Project/",
 //   plugins: [react()],
-// ({
-// 	manualChunks: {
-// 		lodash: ['lodash']
-// 	,}
-// });
 
+//   vite: {
+//     build: {
+//       rollupOptions: {
+//         output: {
+//           manualChunks(id) {
+//             if (id.includes("node_modules")) {
+//               return id
+//                 .toString()
+//                 .split("node_modules/")[1]
+//                 .split("/")[0]
+//                 .toString();
+//             }
+//           },
+//         },
+//       },
+//       chunkSizeWarningLimit: 1600,
+//     },
+//   },
 // });
 
 import { defineConfig } from "vite";
@@ -24,8 +37,13 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          lodash: ["lodash"],
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("lodash")) {
+              return "lodash";
+            }
+            return "vendor"; // General chunk for other node_modules
+          }
         },
       },
     },
