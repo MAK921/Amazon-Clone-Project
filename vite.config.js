@@ -30,22 +30,27 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
-  // base: "/Amaz/on-Clone-Project/",
   plugins: [react()],
   build: {
+    chunkSizeWarningLimit: 1000, // Increase the warning limit to 1000 kB (optional)
     rollupOptions: {
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) {
             if (id.includes("lodash")) {
-              return "lodash";
+              return "lodash"; // Separate chunk for lodash
             }
-            return "vendor"; // General chunk for other node_modules
+            if (id.includes("react")) {
+              return "react-vendor"; // Separate chunk for React-related dependencies
+            }
+            return "vendor"; // General chunk for other large dependencies
           }
         },
       },
     },
+  },
+  optimizeDeps: {
+    include: ["lodash-es"], // Use tree-shakable lodash-es instead of full lodash
   },
 });
