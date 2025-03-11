@@ -6,7 +6,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   //  base: "/Amazon-Clone-Project/",
   plugins: [react()],
+  
   d: {
-    chunkSizeWarningLimit: 1000, // Set to 1000KB (1MB)
+    chunkSizeWarningLimit: 1000,
   },
 });
