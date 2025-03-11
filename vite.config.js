@@ -30,7 +30,7 @@ export default defineConfig({
         },
       },
     },
-    minify: "terser", // Better minification
+    // minify: "terser", // Better minification
     terserOptions: {
       compress: {
         drop_console: true, // Remove console logs
